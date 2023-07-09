@@ -83,7 +83,6 @@ class _NotesScreenState extends State<NotesScreen> {
   }
 
   Widget namesItem(int index){
-
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
       padding: const EdgeInsets.all(15),
@@ -114,7 +113,7 @@ class _NotesScreenState extends State<NotesScreen> {
                         names[index],
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w800,
                         ),
                       ),
@@ -130,7 +129,7 @@ class _NotesScreenState extends State<NotesScreen> {
                     messages[index],
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w900,
                       color: Colors.grey,
                     ),

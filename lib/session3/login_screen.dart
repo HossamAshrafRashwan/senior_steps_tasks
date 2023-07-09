@@ -40,7 +40,7 @@ class _MyLoginScreenState extends State<MyLoginScreen> {
               children: [
                 CircleAvatar(
                   radius: 75,
-                  backgroundImage: AssetImage("images/Screenshot 2023-06-15 210152.png",),
+                  backgroundImage: NetworkImage("https://th.bing.com/th/id/R.0c3c3c030c1deddd36a0c621acfd4d08?rik=1U4F3wGtowVQXw&pid=ImgRaw&r=0"),
 
                 ),
                 Padding(
@@ -107,7 +107,13 @@ class _MyLoginScreenState extends State<MyLoginScreen> {
                   flex: 1,
                   child:OutlinedButton(onPressed: (){
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => const Register() ));
-                  }, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0),),),), child: const Text("Register"),),),
+                  }, style: ButtonStyle(shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          15.0),
+                      ),
+                    ),
+                  ), child: const Text("Register"),),),
               ],
             ),
           ],
